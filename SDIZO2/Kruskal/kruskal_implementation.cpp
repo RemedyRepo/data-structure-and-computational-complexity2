@@ -28,12 +28,12 @@ void kruskal_implementation::kruskal_mst(Matrix *matrix, int starting_vertex) {
             index++;
         }
     }
-//    std::cout << "Edge " << "  Weight" << std::endl;
-//    for (int j = 0; j < index; j++) {
-//        mst_weight += mst[j]->weight;
-//        std::cout <<"(" << mst[j]->parent << ", " << mst[j]->value << ")"<< " -> " << mst[j]->weight << std::endl;
-//    }
-//    std::cout << "MST: " << mst_weight << std::endl;
+    std::cout << "Edge " << "  Weight" << std::endl;
+    for (int j = 0; j < index; j++) {
+        mst_weight += mst[j]->weight;
+        std::cout <<"(" << mst[j]->parent << ", " << mst[j]->value << ")"<< " -> " << mst[j]->weight << std::endl;
+    }
+    std::cout << "MST: " << mst_weight << std::endl;
 }
 
 void kruskal_implementation::make_set(Matrix *matrix){
@@ -168,12 +168,12 @@ void kruskal_implementation::kruskal_mst_matrix(Matrix *matrix) {
             index++;
         }
     }
-//    std::cout << "Edge " << "  Weight" << std::endl;
-//    for (int j = 0; j < index; j++) {
-//        mst_weight += mst[j]->weight;
-//        std::cout <<"(" << mst[j]->parent << ", " << mst[j]->value << ")"<< " -> " << mst[j]->weight << std::endl;
-//    }
-//    std::cout << "MST: " << mst_weight << std::endl;
+    std::cout << "Edge " << "  Weight" << std::endl;
+    for (int j = 0; j < index; j++) {
+        mst_weight += mst[j]->weight;
+        std::cout <<"(" << mst[j]->parent << ", " << mst[j]->value << ")"<< " -> " << mst[j]->weight << std::endl;
+    }
+    std::cout << "MST: " << mst_weight << std::endl;
 }
 
 
