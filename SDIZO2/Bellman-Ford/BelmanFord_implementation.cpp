@@ -31,7 +31,7 @@ void BelmanFord_implementation::find_paths_check_cycles(Matrix *matrix, int star
             }
         }
         if(changed){
-            //print_result(matrix->starting_vertex,path,parent,matrix->vertexes);
+            print_result(matrix->starting_vertex,path,parent,matrix->vertexes);
             return;
         }
     }
@@ -43,7 +43,7 @@ void BelmanFord_implementation::find_paths_check_cycles(Matrix *matrix, int star
         for (int i = 0; i < matrix->vertexes; i++) {
             if (matrix->adjacency_maxtrix[v][i] != 0) {
                 if (path->wsk[i] > path->wsk[v] + matrix->adjacency_maxtrix[v][i]) {
-                    //std::cout << "Negaitve cycle occured" << std::endl;
+                    std::cout << "Negaitve cycle occured" << std::endl;
                     return;
                 }
             }
@@ -109,7 +109,7 @@ void BelmanFord_implementation::find_paths_check_cycles_list(Matrix *matrix, int
             }
 
             if (changed) {
-                //print_result(matrix->starting_vertex, path, parent, matrix->vertexes);
+                print_result(matrix->starting_vertex, path, parent, matrix->vertexes);
                 return;
             }
         }
@@ -122,7 +122,7 @@ void BelmanFord_implementation::find_paths_check_cycles_list(Matrix *matrix, int
                 int weight = current_vertex->weight;
 
                 if (path->wsk[destination] > path->wsk[v] + weight) {
-                    //std::cout << "Negative cycle occurred" << std::endl;
+                    std::cout << "Negative cycle occurred" << std::endl;
                     return;
                 }
 

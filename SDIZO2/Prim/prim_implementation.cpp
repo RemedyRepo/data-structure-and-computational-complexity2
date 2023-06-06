@@ -29,7 +29,7 @@ void prim_implementation::prim_mst(Matrix *matrix, int starting_vertex) {
                 }
             }
         }
-//        display_result(parent,matrix,key,matrix->vertexes);
+        display_result(parent,matrix,key,matrix->vertexes);
 
     }
 
@@ -96,7 +96,7 @@ void prim_implementation::prim_mst_list(Matrix *matrix, int starting_vertex) {
             }
         }
     }
-    //display_result(parent,matrix,key,matrix->vertexes);
+    display_result(parent,matrix,key,matrix->vertexes);
 }
 
 prim_implementation::~prim_implementation() {
